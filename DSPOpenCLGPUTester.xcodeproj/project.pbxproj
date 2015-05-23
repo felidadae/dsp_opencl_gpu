@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1355C417AFD8B80018556D /* FilterModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1355C317AFD8B70018556D /* FilterModule.cpp */; };
+		AE1E40EF17B6A59B0050B63C /* Laboratory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1E40ED17B6A59B0050B63C /* Laboratory.cpp */; };
+		AE252FD21802CFBB00E5F34B /* PIROpenCL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE252FD01802CFBB00E5F34B /* PIROpenCL.cpp */; };
+		AE257AFF17C3DDB10020C3DB /* Experiment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE257AFD17C3DDB10020C3DB /* Experiment.cpp */; };
+		AE27FFB217E6DD8900993E04 /* CopyingProcessor_OpenCL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE27FFAC17E6DD8900993E04 /* CopyingProcessor_OpenCL.cpp */; };
+		AE27FFB317E6DD8900993E04 /* CopyingProcessor_Ganged_OpenCL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE27FFAE17E6DD8900993E04 /* CopyingProcessor_Ganged_OpenCL.cpp */; };
+		AE27FFB417E6DD8900993E04 /* simply_kernels.cl in Sources */ = {isa = PBXBuildFile; fileRef = AE27FFB017E6DD8900993E04 /* simply_kernels.cl */; };
+		AE3C6E001767484F00AA61AA /* OpenCLProcessorBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE3C6DFE1767484F00AA61AA /* OpenCLProcessorBase.cpp */; };
+		AE44ABAC17AACC5B00A21CFE /* IRFC_LowPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE44ABAB17AACC5A00A21CFE /* IRFC_LowPass.cpp */; };
+		AE44ABB617AB9B3700A21CFE /* IRFC_FromFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE44ABB517AB9B3700A21CFE /* IRFC_FromFile.cpp */; };
+		AE48463217C5083A004AD7A9 /* AudioStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE48463017C5083A004AD7A9 /* AudioStream.cpp */; };
+		AE58DAAC17C7E29400CF455E /* IRFCBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE58DAAB17C7E29300CF455E /* IRFCBase.cpp */; };
+		AE75986C17C21AD000B4EFF1 /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE75986B17C21AD000B4EFF1 /* libsndfile.a */; };
+		AE75986E17C25A0F00B4EFF1 /* convolute_kernel_frequency_domain.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEF988D617B8E574004882AF /* convolute_kernel_frequency_domain.cl */; };
+		AE8FDF3E17CE6842001C9B71 /* libfftw3f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8FDF3D17CE683F001C9B71 /* libfftw3f.a */; };
+		AE99CDC0172D2842006E6210 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE99CDBF172D2842006E6210 /* OpenCL.framework */; };
+		AEB4F84B17D5022A004FF22B /* fft_execute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEB4F84617D5022A004FF22B /* fft_execute.cpp */; };
+		AEB4F84C17D5022A004FF22B /* fft_kernelstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEB4F84817D5022A004FF22B /* fft_kernelstring.cpp */; };
+		AEB4F84D17D5022A004FF22B /* fft_setup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEB4F84917D5022A004FF22B /* fft_setup.cpp */; };
+		AEBBC43D17BE78DB00F5BC31 /* ChannelsWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBBC43C17BE78DB00F5BC31 /* ChannelsWindow.cpp */; };
+		AEBBC95B17E99F5D004756F4 /* simply_kernels.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE27FFB017E6DD8900993E04 /* simply_kernels.cl */; };
+		AEC5AA9117D0AA7300FD809D /* IRFCsFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEC5AA8F17D0AA7300FD809D /* IRFCsFactory.cpp */; };
+		AEC5AA9417D0AA8600FD809D /* IRFCsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEC5AA9217D0AA8600FD809D /* IRFCsManager.cpp */; };
+		AEC8A7EE188ED0FF00E6A85F /* in.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC8A7C9188DA06000E6A85F /* in.txt */; };
+		AECCA3371888010C00181FE8 /* OpenCLInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AECCA3351888010C00181FE8 /* OpenCLInfo.cpp */; };
+		AED3A61817CC80910041E2EA /* PIR_fftw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AED3A61617CC80910041E2EA /* PIR_fftw.cpp */; };
+		AEE44EB617C01BE6008A18C7 /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE44EB517C01BE6008A18C7 /* libfftw3.a */; };
+		AEE4683717C4C4890054AAD0 /* Properties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE4683617C4C4890054AAD0 /* Properties.cpp */; };
+		AEE9D9FF17D1CDEE005030B9 /* FMParamsInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEE9D9FD17D1CDEC005030B9 /* FMParamsInfo.cpp */; };
+		AEEC1F3A17B0FEA30000C91B /* ConvolutionersManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEEC1F3917B0FEA30000C91B /* ConvolutionersManager.cpp */; };
+		AEEC1F3D17B0FF160000C91B /* Convolutioner_FrequencyDomain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEEC1F3B17B0FF160000C91B /* Convolutioner_FrequencyDomain.cpp */; };
+		AEEC1F4817B141250000C91B /* Convolutioner_FrequencyDomain_OpenCL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEEC1F4617B141250000C91B /* Convolutioner_FrequencyDomain_OpenCL.cpp */; };
+		AEEC1F4B17B1432E0000C91B /* ConvolutionersFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEEC1F4917B1432E0000C91B /* ConvolutionersFactory.cpp */; };
+		AEEF97D416DCBD7700898F01 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEEF97D116DCBD7700898F01 /* main.cpp */; };
+		AEF3155217D715C3003CFD56 /* IRFC_Testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEF3155017D715C3003CFD56 /* IRFC_Testing.cpp */; };
+		AEFC521A17AEBA8100DD8DE8 /* Convolutioner_TimeDomain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEFC521817AEBA8100DD8DE8 /* Convolutioner_TimeDomain.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		AE1385D11732640300FB6F80 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.opencl;
+			fileType = sourcecode.opencl;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# <com.apple.compilers.opencl>\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEEF97BF16DCBD5300898F01 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				AEC8A7EE188ED0FF00E6A85F /* in.txt in CopyFiles */,
+				AEBBC95B17E99F5D004756F4 /* simply_kernels.cl in CopyFiles */,
+				AE75986E17C25A0F00B4EFF1 /* convolute_kernel_frequency_domain.cl in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE05C6D917AD21E300EA8FEE /* AudioInOutBuffers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioInOutBuffers.h; sourceTree = "<group>"; };
+		AE05C6DA17AD227600EA8FEE /* IRF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRF.h; sourceTree = "<group>"; };
+		AE0DA4C8180BFB30004FB68F /* pl_opencl_device_description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pl_opencl_device_description.h; sourceTree = "<group>"; };
+		AE1355C317AFD8B70018556D /* FilterModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterModule.cpp; sourceTree = "<group>"; };
+		AE1E40EB17B6A59B0050B63C /* TrialsSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrialsSet.h; sourceTree = "<group>"; };
+		AE1E40EC17B6A59B0050B63C /* Laboratory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Laboratory.h; sourceTree = "<group>"; };
+		AE1E40ED17B6A59B0050B63C /* Laboratory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Laboratory.cpp; sourceTree = "<group>"; };
+		AE1E40EE17B6A59B0050B63C /* Experiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Experiment.h; sourceTree = "<group>"; };
+		AE252FCF1802CFA100E5F34B /* PIRBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIRBase.h; sourceTree = "<group>"; };
+		AE252FD01802CFBB00E5F34B /* PIROpenCL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PIROpenCL.cpp; sourceTree = "<group>"; };
+		AE252FD11802CFBB00E5F34B /* PIROpenCL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIROpenCL.h; sourceTree = "<group>"; };
+		AE257AFD17C3DDB10020C3DB /* Experiment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Experiment.cpp; sourceTree = "<group>"; };
+		AE27FFAC17E6DD8900993E04 /* CopyingProcessor_OpenCL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CopyingProcessor_OpenCL.cpp; sourceTree = "<group>"; };
+		AE27FFAD17E6DD8900993E04 /* CopyingProcessor_OpenCL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyingProcessor_OpenCL.h; sourceTree = "<group>"; };
+		AE27FFAE17E6DD8900993E04 /* CopyingProcessor_Ganged_OpenCL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CopyingProcessor_Ganged_OpenCL.cpp; sourceTree = "<group>"; };
+		AE27FFAF17E6DD8900993E04 /* CopyingProcessor_Ganged_OpenCL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyingProcessor_Ganged_OpenCL.h; sourceTree = "<group>"; };
+		AE27FFB017E6DD8900993E04 /* simply_kernels.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = simply_kernels.cl; sourceTree = "<group>"; };
+		AE29421517D779FD00056F34 /* IfTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IfTesting.h; sourceTree = "<group>"; };
+		AE3C6DFE1767484F00AA61AA /* OpenCLProcessorBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCLProcessorBase.cpp; sourceTree = "<group>"; };
+		AE3C6DFF1767484F00AA61AA /* OpenCLProcessorBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCLProcessorBase.h; sourceTree = "<group>"; };
+		AE443FA417520E2E0003CA95 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		AE44ABA117AAB4B000A21CFE /* FilterModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterModule.h; sourceTree = "<group>"; };
+		AE44ABA317AAB55B00A21CFE /* FMTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMTypes.h; sourceTree = "<group>"; };
+		AE44ABA417AABB0900A21CFE /* IRFCBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRFCBase.h; sourceTree = "<group>"; };
+		AE44ABA617AAC74300A21CFE /* IRFC_LowPass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRFC_LowPass.h; sourceTree = "<group>"; };
+		AE44ABA717AAC75800A21CFE /* IRFC_FromFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRFC_FromFile.h; sourceTree = "<group>"; };
+		AE44ABAB17AACC5A00A21CFE /* IRFC_LowPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRFC_LowPass.cpp; sourceTree = "<group>"; };
+		AE44ABB517AB9B3700A21CFE /* IRFC_FromFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRFC_FromFile.cpp; sourceTree = "<group>"; };
+		AE4710DA17AD9F1B00BAC4DB /* IConvolutioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IConvolutioner.h; sourceTree = "<group>"; };
+		AE48463017C5083A004AD7A9 /* AudioStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioStream.cpp; sourceTree = "<group>"; };
+		AE48463117C5083A004AD7A9 /* AudioStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStream.h; sourceTree = "<group>"; };
+		AE58DAAB17C7E29300CF455E /* IRFCBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRFCBase.cpp; sourceTree = "<group>"; };
+		AE75986917C21A0300B4EFF1 /* AudioFileIOManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileIOManager.h; sourceTree = "<group>"; };
+		AE75986B17C21AD000B4EFF1 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = /usr/local/lib/libsndfile.a; sourceTree = "<absolute>"; };
+		AE8FDF3D17CE683F001C9B71 /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = /usr/local/lib/libfftw3f.a; sourceTree = "<absolute>"; };
+		AE8FDF5717CF591C001C9B71 /* DebugFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugFunctions.h; sourceTree = "<group>"; };
+		AE99CDBF172D2842006E6210 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		AEB4F84417D5022A004FF22B /* clFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clFFT.h; sourceTree = "<group>"; };
+		AEB4F84517D5022A004FF22B /* fft_base_kernels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_base_kernels.h; sourceTree = "<group>"; };
+		AEB4F84617D5022A004FF22B /* fft_execute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_execute.cpp; sourceTree = "<group>"; };
+		AEB4F84717D5022A004FF22B /* fft_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft_internal.h; sourceTree = "<group>"; };
+		AEB4F84817D5022A004FF22B /* fft_kernelstring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_kernelstring.cpp; sourceTree = "<group>"; };
+		AEB4F84917D5022A004FF22B /* fft_setup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft_setup.cpp; sourceTree = "<group>"; };
+		AEB4F84A17D5022A004FF22B /* procs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = procs.h; sourceTree = "<group>"; };
+		AEBBC43C17BE78DB00F5BC31 /* ChannelsWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChannelsWindow.cpp; sourceTree = "<group>"; };
+		AEC5AA8F17D0AA7300FD809D /* IRFCsFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRFCsFactory.cpp; sourceTree = "<group>"; };
+		AEC5AA9017D0AA7300FD809D /* IRFCsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFCsFactory.h; sourceTree = "<group>"; };
+		AEC5AA9217D0AA8600FD809D /* IRFCsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRFCsManager.cpp; sourceTree = "<group>"; };
+		AEC5AA9317D0AA8600FD809D /* IRFCsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFCsManager.h; sourceTree = "<group>"; };
+		AEC5AA9517D0AAF600FD809D /* IIRFC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIRFC.h; sourceTree = "<group>"; };
+		AEC5AA9617D0ADF000FD809D /* IParameterizable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IParameterizable.h; sourceTree = "<group>"; };
+		AEC8A7C9188DA06000E6A85F /* in.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = in.txt; sourceTree = "<group>"; };
+		AECCA3351888010C00181FE8 /* OpenCLInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCLInfo.cpp; sourceTree = "<group>"; };
+		AECCA3361888010C00181FE8 /* OpenCLInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCLInfo.h; sourceTree = "<group>"; };
+		AED3A60417CB57E80041E2EA /* OpenCLBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCLBuffer.h; sourceTree = "<group>"; };
+		AED3A60A17CBA1F30041E2EA /* OpenCLProcessorWithBuffersInOutBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCLProcessorWithBuffersInOutBase.h; sourceTree = "<group>"; };
+		AED3A61217CBA56A0041E2EA /* ConvolutionerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvolutionerBase.h; sourceTree = "<group>"; };
+		AED3A61417CBA7930041E2EA /* IProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IProcess.h; sourceTree = "<group>"; };
+		AED3A61617CC80910041E2EA /* PIR_fftw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PIR_fftw.cpp; sourceTree = "<group>"; };
+		AED3A61717CC80910041E2EA /* PIR_fftw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIR_fftw.h; sourceTree = "<group>"; };
+		AED8BD28188044B700054C21 /* StatisticsComputator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatisticsComputator.h; sourceTree = "<group>"; };
+		AEE13DA218043BFF008B8EAC /* language_pl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = language_pl.h; sourceTree = "<group>"; };
+		AEE44EB517C01BE6008A18C7 /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = /usr/local/lib/libfftw3.a; sourceTree = "<absolute>"; };
+		AEE4683517C4C3900054AAD0 /* Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Properties.h; sourceTree = "<group>"; };
+		AEE4683617C4C4890054AAD0 /* Properties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Properties.cpp; sourceTree = "<group>"; };
+		AEE9D9FD17D1CDEC005030B9 /* FMParamsInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FMParamsInfo.cpp; sourceTree = "<group>"; };
+		AEE9D9FE17D1CDED005030B9 /* FMParamsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMParamsInfo.h; sourceTree = "<group>"; };
+		AEEC1F3617B0D3620000C91B /* ConvolutionersManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvolutionersManager.h; sourceTree = "<group>"; };
+		AEEC1F3917B0FEA30000C91B /* ConvolutionersManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvolutionersManager.cpp; sourceTree = "<group>"; };
+		AEEC1F3B17B0FF160000C91B /* Convolutioner_FrequencyDomain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Convolutioner_FrequencyDomain.cpp; sourceTree = "<group>"; };
+		AEEC1F3C17B0FF160000C91B /* Convolutioner_FrequencyDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convolutioner_FrequencyDomain.h; sourceTree = "<group>"; };
+		AEEC1F3E17B11A0D0000C91B /* ChannelsWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelsWindow.h; sourceTree = "<group>"; };
+		AEEC1F4617B141250000C91B /* Convolutioner_FrequencyDomain_OpenCL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Convolutioner_FrequencyDomain_OpenCL.cpp; sourceTree = "<group>"; };
+		AEEC1F4717B141250000C91B /* Convolutioner_FrequencyDomain_OpenCL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convolutioner_FrequencyDomain_OpenCL.h; sourceTree = "<group>"; };
+		AEEC1F4917B1432E0000C91B /* ConvolutionersFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvolutionersFactory.cpp; sourceTree = "<group>"; };
+		AEEC1F4A17B1432E0000C91B /* ConvolutionersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvolutionersFactory.h; sourceTree = "<group>"; };
+		AEEE111D189FA24400753910 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		AEEF97C116DCBD5300898F01 /* DSPOpenCLGPUTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSPOpenCLGPUTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEF97D116DCBD7700898F01 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AEF3155017D715C3003CFD56 /* IRFC_Testing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRFC_Testing.cpp; sourceTree = "<group>"; };
+		AEF3155117D715C3003CFD56 /* IRFC_Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFC_Testing.h; sourceTree = "<group>"; };
+		AEF7ACF417CA4D6400A3920F /* AudioBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioBuffer.h; sourceTree = "<group>"; };
+		AEF988D617B8E574004882AF /* convolute_kernel_frequency_domain.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; path = convolute_kernel_frequency_domain.cl; sourceTree = "<group>"; };
+		AEFC521817AEBA8100DD8DE8 /* Convolutioner_TimeDomain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Convolutioner_TimeDomain.cpp; sourceTree = "<group>"; };
+		AEFC521917AEBA8100DD8DE8 /* Convolutioner_TimeDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convolutioner_TimeDomain.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEEF97BE16DCBD5300898F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE99CDC0172D2842006E6210 /* OpenCL.framework in Frameworks */,
+				AEE44EB617C01BE6008A18C7 /* libfftw3.a in Frameworks */,
+				AE8FDF3E17CE6842001C9B71 /* libfftw3f.a in Frameworks */,
+				AE75986C17C21AD000B4EFF1 /* libsndfile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE0DA4C7180BFAF8004FB68F /* text_fields_languages */ = {
+			isa = PBXGroup;
+			children = (
+				AE0DA4C8180BFB30004FB68F /* pl_opencl_device_description.h */,
+			);
+			name = text_fields_languages;
+			sourceTree = "<group>";
+		};
+		AE0DD02517B1573D005F79CA /* Laboratory */ = {
+			isa = PBXGroup;
+			children = (
+				AE1E40EC17B6A59B0050B63C /* Laboratory.h */,
+				AE1E40ED17B6A59B0050B63C /* Laboratory.cpp */,
+				AE1E40EA17B6A5630050B63C /* experiment */,
+				AE9B4524174E3E5600BAE330 /* timing */,
+			);
+			name = Laboratory;
+			sourceTree = "<group>";
+		};
+		AE1E40EA17B6A5630050B63C /* experiment */ = {
+			isa = PBXGroup;
+			children = (
+				AE58DAAD17C7EC0800CF455E /* properties */,
+				AE1E40EB17B6A59B0050B63C /* TrialsSet.h */,
+				AE1E40EE17B6A59B0050B63C /* Experiment.h */,
+				AE257AFD17C3DDB10020C3DB /* Experiment.cpp */,
+				AED8BD28188044B700054C21 /* StatisticsComputator.h */,
+			);
+			name = experiment;
+			sourceTree = "<group>";
+		};
+		AE23B0A917D0E481004B1DE2 /* ProcessingInterface */ = {
+			isa = PBXGroup;
+			children = (
+				AE23B0AA17D0E6F2004B1DE2 /* AudioInOutBuffers */,
+				AED3A61417CBA7930041E2EA /* IProcess.h */,
+				AEC5AA9617D0ADF000FD809D /* IParameterizable.h */,
+			);
+			name = ProcessingInterface;
+			sourceTree = "<group>";
+		};
+		AE23B0AA17D0E6F2004B1DE2 /* AudioInOutBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				AEF7ACF417CA4D6400A3920F /* AudioBuffer.h */,
+				AE05C6D917AD21E300EA8FEE /* AudioInOutBuffers.h */,
+			);
+			name = AudioInOutBuffers;
+			sourceTree = "<group>";
+		};
+		AE27FFA917E6DD3C00993E04 /* GPUTheSimplestDSP */ = {
+			isa = PBXGroup;
+			children = (
+				AE27FFB017E6DD8900993E04 /* simply_kernels.cl */,
+				AE27FFAF17E6DD8900993E04 /* CopyingProcessor_Ganged_OpenCL.h */,
+				AE27FFAE17E6DD8900993E04 /* CopyingProcessor_Ganged_OpenCL.cpp */,
+				AE27FFAD17E6DD8900993E04 /* CopyingProcessor_OpenCL.h */,
+				AE27FFAC17E6DD8900993E04 /* CopyingProcessor_OpenCL.cpp */,
+			);
+			name = GPUTheSimplestDSP;
+			sourceTree = "<group>";
+		};
+		AE3C6E011767485300AA61AA /* OpenCLBase */ = {
+			isa = PBXGroup;
+			children = (
+				AE0DA4C7180BFAF8004FB68F /* text_fields_languages */,
+				AED3A60417CB57E80041E2EA /* OpenCLBuffer.h */,
+				AE3C6DFF1767484F00AA61AA /* OpenCLProcessorBase.h */,
+				AE3C6DFE1767484F00AA61AA /* OpenCLProcessorBase.cpp */,
+				AED3A60A17CBA1F30041E2EA /* OpenCLProcessorWithBuffersInOutBase.h */,
+				AECCA3361888010C00181FE8 /* OpenCLInfo.h */,
+				AECCA3351888010C00181FE8 /* OpenCLInfo.cpp */,
+			);
+			name = OpenCLBase;
+			sourceTree = "<group>";
+		};
+		AE4392A817C12BFF00A14EED /* base */ = {
+			isa = PBXGroup;
+			children = (
+				AE05C6DA17AD227600EA8FEE /* IRF.h */,
+				AEC5AA9517D0AAF600FD809D /* IIRFC.h */,
+				AE44ABA417AABB0900A21CFE /* IRFCBase.h */,
+				AE58DAAB17C7E29300CF455E /* IRFCBase.cpp */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		AE4392A917C12C0700A14EED /* low_pass */ = {
+			isa = PBXGroup;
+			children = (
+				AE44ABA617AAC74300A21CFE /* IRFC_LowPass.h */,
+				AE44ABAB17AACC5A00A21CFE /* IRFC_LowPass.cpp */,
+			);
+			name = low_pass;
+			sourceTree = "<group>";
+		};
+		AE4392AA17C12C1700A14EED /* from_file */ = {
+			isa = PBXGroup;
+			children = (
+				AE44ABA717AAC75800A21CFE /* IRFC_FromFile.h */,
+				AE44ABB517AB9B3700A21CFE /* IRFC_FromFile.cpp */,
+			);
+			name = from_file;
+			sourceTree = "<group>";
+		};
+		AE44ABA817AAC76200A21CFE /* IRFC */ = {
+			isa = PBXGroup;
+			children = (
+				AEC5AA8A17D0A9DC00FD809D /* manager */,
+				AEC5AA8B17D0A9E600FD809D /* factory */,
+				AE4392A817C12BFF00A14EED /* base */,
+				AE4392A917C12C0700A14EED /* low_pass */,
+				AE4392AA17C12C1700A14EED /* from_file */,
+				AEF3154F17D71580003CFD56 /* testing */,
+			);
+			name = IRFC;
+			sourceTree = "<group>";
+		};
+		AE44ABA917AAC7B600A21CFE /* FilterModule */ = {
+			isa = PBXGroup;
+			children = (
+				AE44ABA317AAB55B00A21CFE /* FMTypes.h */,
+				AEE9D9FE17D1CDED005030B9 /* FMParamsInfo.h */,
+				AEE9D9FD17D1CDEC005030B9 /* FMParamsInfo.cpp */,
+				AE44ABA117AAB4B000A21CFE /* FilterModule.h */,
+				AE1355C317AFD8B70018556D /* FilterModule.cpp */,
+				AE44ABA817AAC76200A21CFE /* IRFC */,
+				AE44ABB917AC149500A21CFE /* Convolutioner */,
+			);
+			name = FilterModule;
+			sourceTree = "<group>";
+		};
+		AE44ABB717ABAA6200A21CFE /* AudioFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				AE48463317C51938004AD7A9 /* audioStream */,
+				AE75986917C21A0300B4EFF1 /* AudioFileIOManager.h */,
+			);
+			name = AudioFileManager;
+			sourceTree = "<group>";
+		};
+		AE44ABB917AC149500A21CFE /* Convolutioner */ = {
+			isa = PBXGroup;
+			children = (
+				AEEC1F3F17B13D900000C91B /* manager */,
+				AEEC1F4C17B14BB10000C91B /* factory */,
+				AED3A61517CBA92A0041E2EA /* channelsWindow */,
+				AE8FDF3B17CE2539001C9B71 /* base */,
+				AEEC1F4017B13DAB0000C91B /* timeDomain */,
+				AEEC1F4117B13DB20000C91B /* frequencyDomain */,
+			);
+			name = Convolutioner;
+			sourceTree = "<group>";
+		};
+		AE48463317C51938004AD7A9 /* audioStream */ = {
+			isa = PBXGroup;
+			children = (
+				AE48463117C5083A004AD7A9 /* AudioStream.h */,
+				AE48463017C5083A004AD7A9 /* AudioStream.cpp */,
+			);
+			name = audioStream;
+			sourceTree = "<group>";
+		};
+		AE58DAAD17C7EC0800CF455E /* properties */ = {
+			isa = PBXGroup;
+			children = (
+				AEE13DA118043BC6008B8EAC /* text_fields_languages */,
+				AEE4683517C4C3900054AAD0 /* Properties.h */,
+				AEE4683617C4C4890054AAD0 /* Properties.cpp */,
+			);
+			name = properties;
+			sourceTree = "<group>";
+		};
+		AE8FDF3B17CE2539001C9B71 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				AE4710DA17AD9F1B00BAC4DB /* IConvolutioner.h */,
+				AED3A61217CBA56A0041E2EA /* ConvolutionerBase.h */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		AE8FDF3C17CE2A84001C9B71 /* PIR */ = {
+			isa = PBXGroup;
+			children = (
+				AE252FCF1802CFA100E5F34B /* PIRBase.h */,
+				AED3A61717CC80910041E2EA /* PIR_fftw.h */,
+				AED3A61617CC80910041E2EA /* PIR_fftw.cpp */,
+				AE252FD11802CFBB00E5F34B /* PIROpenCL.h */,
+				AE252FD01802CFBB00E5F34B /* PIROpenCL.cpp */,
+			);
+			name = PIR;
+			sourceTree = "<group>";
+		};
+		AE8FDF5617CF5902001C9B71 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				AE8FDF5717CF591C001C9B71 /* DebugFunctions.h */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		AE9B4524174E3E5600BAE330 /* timing */ = {
+			isa = PBXGroup;
+			children = (
+				AE443FA417520E2E0003CA95 /* Timer.h */,
+			);
+			name = timing;
+			sourceTree = "<group>";
+		};
+		AEB4F83E17D4F8CC004FF22B /* FFT_OpenCL */ = {
+			isa = PBXGroup;
+			children = (
+				AEB4F84417D5022A004FF22B /* clFFT.h */,
+				AEB4F84517D5022A004FF22B /* fft_base_kernels.h */,
+				AEB4F84617D5022A004FF22B /* fft_execute.cpp */,
+				AEB4F84717D5022A004FF22B /* fft_internal.h */,
+				AEB4F84817D5022A004FF22B /* fft_kernelstring.cpp */,
+				AEB4F84917D5022A004FF22B /* fft_setup.cpp */,
+				AEB4F84A17D5022A004FF22B /* procs.h */,
+			);
+			name = FFT_OpenCL;
+			sourceTree = "<group>";
+		};
+		AEC5AA8A17D0A9DC00FD809D /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				AEC5AA9317D0AA8600FD809D /* IRFCsManager.h */,
+				AEC5AA9217D0AA8600FD809D /* IRFCsManager.cpp */,
+			);
+			name = manager;
+			sourceTree = "<group>";
+		};
+		AEC5AA8B17D0A9E600FD809D /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				AEC5AA9017D0AA7300FD809D /* IRFCsFactory.h */,
+				AEC5AA8F17D0AA7300FD809D /* IRFCsFactory.cpp */,
+			);
+			name = factory;
+			sourceTree = "<group>";
+		};
+		AEC8A7C8188D9AFB00E6A85F /* External libraries */ = {
+			isa = PBXGroup;
+			children = (
+				AE8FDF3D17CE683F001C9B71 /* libfftw3f.a */,
+				AE75986B17C21AD000B4EFF1 /* libsndfile.a */,
+				AEE44EB517C01BE6008A18C7 /* libfftw3.a */,
+				AE99CDBF172D2842006E6210 /* OpenCL.framework */,
+			);
+			name = "External libraries";
+			sourceTree = "<group>";
+		};
+		AED3A61517CBA92A0041E2EA /* channelsWindow */ = {
+			isa = PBXGroup;
+			children = (
+				AEEC1F3E17B11A0D0000C91B /* ChannelsWindow.h */,
+				AEBBC43C17BE78DB00F5BC31 /* ChannelsWindow.cpp */,
+			);
+			name = channelsWindow;
+			sourceTree = "<group>";
+		};
+		AEE13DA118043BC6008B8EAC /* text_fields_languages */ = {
+			isa = PBXGroup;
+			children = (
+				AEE13DA218043BFF008B8EAC /* language_pl.h */,
+			);
+			name = text_fields_languages;
+			sourceTree = "<group>";
+		};
+		AEEC1F3F17B13D900000C91B /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				AEEC1F3617B0D3620000C91B /* ConvolutionersManager.h */,
+				AEEC1F3917B0FEA30000C91B /* ConvolutionersManager.cpp */,
+			);
+			name = manager;
+			sourceTree = "<group>";
+		};
+		AEEC1F4017B13DAB0000C91B /* timeDomain */ = {
+			isa = PBXGroup;
+			children = (
+				AEFC521917AEBA8100DD8DE8 /* Convolutioner_TimeDomain.h */,
+				AEFC521817AEBA8100DD8DE8 /* Convolutioner_TimeDomain.cpp */,
+			);
+			name = timeDomain;
+			sourceTree = "<group>";
+		};
+		AEEC1F4117B13DB20000C91B /* frequencyDomain */ = {
+			isa = PBXGroup;
+			children = (
+				AE8FDF3C17CE2A84001C9B71 /* PIR */,
+				AEEC1F3C17B0FF160000C91B /* Convolutioner_FrequencyDomain.h */,
+				AEEC1F3B17B0FF160000C91B /* Convolutioner_FrequencyDomain.cpp */,
+				AEEC1F4717B141250000C91B /* Convolutioner_FrequencyDomain_OpenCL.h */,
+				AEEC1F4617B141250000C91B /* Convolutioner_FrequencyDomain_OpenCL.cpp */,
+				AEF988D617B8E574004882AF /* convolute_kernel_frequency_domain.cl */,
+			);
+			name = frequencyDomain;
+			sourceTree = "<group>";
+		};
+		AEEC1F4C17B14BB10000C91B /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				AEEC1F4A17B1432E0000C91B /* ConvolutionersFactory.h */,
+				AEEC1F4917B1432E0000C91B /* ConvolutionersFactory.cpp */,
+			);
+			name = factory;
+			sourceTree = "<group>";
+		};
+		AEEF97B816DCBD5300898F01 = {
+			isa = PBXGroup;
+			children = (
+				AEEE111D189FA24400753910 /* ReadMe.txt */,
+				AEC8A7C9188DA06000E6A85F /* in.txt */,
+				AEC8A7C8188D9AFB00E6A85F /* External libraries */,
+				AEEF97C316DCBD5300898F01 /* Source */,
+				AEEF97C216DCBD5300898F01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEEF97C216DCBD5300898F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEEF97C116DCBD5300898F01 /* DSPOpenCLGPUTester */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEEF97C316DCBD5300898F01 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AE29421517D779FD00056F34 /* IfTesting.h */,
+				AEEF97D116DCBD7700898F01 /* main.cpp */,
+				AE23B0A917D0E481004B1DE2 /* ProcessingInterface */,
+				AE44ABA917AAC7B600A21CFE /* FilterModule */,
+				AE27FFA917E6DD3C00993E04 /* GPUTheSimplestDSP */,
+				AE0DD02517B1573D005F79CA /* Laboratory */,
+				AE44ABB717ABAA6200A21CFE /* AudioFileManager */,
+				AE3C6E011767485300AA61AA /* OpenCLBase */,
+				AEB4F83E17D4F8CC004FF22B /* FFT_OpenCL */,
+				AE8FDF5617CF5902001C9B71 /* Debug */,
+			);
+			name = Source;
+			path = source;
+			sourceTree = "<group>";
+		};
+		AEF3154F17D71580003CFD56 /* testing */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3155117D715C3003CFD56 /* IRFC_Testing.h */,
+				AEF3155017D715C3003CFD56 /* IRFC_Testing.cpp */,
+			);
+			name = testing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEEF97C016DCBD5300898F01 /* DSPOpenCLGPUTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEEF97CA16DCBD5300898F01 /* Build configuration list for PBXNativeTarget "DSPOpenCLGPUTester" */;
+			buildPhases = (
+				AEEF97BD16DCBD5300898F01 /* Sources */,
+				AEEF97BE16DCBD5300898F01 /* Frameworks */,
+				AEEF97BF16DCBD5300898F01 /* CopyFiles */,
+			);
+			buildRules = (
+				AE1385D11732640300FB6F80 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = DSPOpenCLGPUTester;
+			productName = LowPassFilter_Standalone;
+			productReference = AEEF97C116DCBD5300898F01 /* DSPOpenCLGPUTester */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEEF97B916DCBD5300898F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = kadlubek47;
+			};
+			buildConfigurationList = AEEF97BC16DCBD5300898F01 /* Build configuration list for PBXProject "DSPOpenCLGPUTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AEEF97B816DCBD5300898F01;
+			productRefGroup = AEEF97C216DCBD5300898F01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEEF97C016DCBD5300898F01 /* DSPOpenCLGPUTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEEF97BD16DCBD5300898F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEF97D416DCBD7700898F01 /* main.cpp in Sources */,
+				AE3C6E001767484F00AA61AA /* OpenCLProcessorBase.cpp in Sources */,
+				AE44ABAC17AACC5B00A21CFE /* IRFC_LowPass.cpp in Sources */,
+				AE44ABB617AB9B3700A21CFE /* IRFC_FromFile.cpp in Sources */,
+				AEFC521A17AEBA8100DD8DE8 /* Convolutioner_TimeDomain.cpp in Sources */,
+				AECCA3371888010C00181FE8 /* OpenCLInfo.cpp in Sources */,
+				AE1355C417AFD8B80018556D /* FilterModule.cpp in Sources */,
+				AE252FD21802CFBB00E5F34B /* PIROpenCL.cpp in Sources */,
+				AEEC1F3A17B0FEA30000C91B /* ConvolutionersManager.cpp in Sources */,
+				AEEC1F3D17B0FF160000C91B /* Convolutioner_FrequencyDomain.cpp in Sources */,
+				AEEC1F4817B141250000C91B /* Convolutioner_FrequencyDomain_OpenCL.cpp in Sources */,
+				AEEC1F4B17B1432E0000C91B /* ConvolutionersFactory.cpp in Sources */,
+				AE1E40EF17B6A59B0050B63C /* Laboratory.cpp in Sources */,
+				AEBBC43D17BE78DB00F5BC31 /* ChannelsWindow.cpp in Sources */,
+				AE257AFF17C3DDB10020C3DB /* Experiment.cpp in Sources */,
+				AEE4683717C4C4890054AAD0 /* Properties.cpp in Sources */,
+				AE48463217C5083A004AD7A9 /* AudioStream.cpp in Sources */,
+				AE58DAAC17C7E29400CF455E /* IRFCBase.cpp in Sources */,
+				AED3A61817CC80910041E2EA /* PIR_fftw.cpp in Sources */,
+				AEC5AA9117D0AA7300FD809D /* IRFCsFactory.cpp in Sources */,
+				AEC5AA9417D0AA8600FD809D /* IRFCsManager.cpp in Sources */,
+				AEE9D9FF17D1CDEE005030B9 /* FMParamsInfo.cpp in Sources */,
+				AEB4F84B17D5022A004FF22B /* fft_execute.cpp in Sources */,
+				AEB4F84C17D5022A004FF22B /* fft_kernelstring.cpp in Sources */,
+				AEB4F84D17D5022A004FF22B /* fft_setup.cpp in Sources */,
+				AEF3155217D715C3003CFD56 /* IRFC_Testing.cpp in Sources */,
+				AE27FFB217E6DD8900993E04 /* CopyingProcessor_OpenCL.cpp in Sources */,
+				AE27FFB317E6DD8900993E04 /* CopyingProcessor_Ganged_OpenCL.cpp in Sources */,
+				AE27FFB417E6DD8900993E04 /* simply_kernels.cl in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AEEF97C816DCBD5300898F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+			};
+			name = Debug;
+		};
+		AEEF97C916DCBD5300898F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+			};
+			name = Release;
+		};
+		AEEF97CB16DCBD5300898F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				OTHER_LDFLAGS = "-Wl,-stack_size,10000000";
+				PRODUCT_NAME = DSPOpenCLGPUTester;
+			};
+			name = Debug;
+		};
+		AEEF97CC16DCBD5300898F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				OTHER_LDFLAGS = "-Wl,-stack_size,10000000";
+				PRODUCT_NAME = DSPOpenCLGPUTester;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEEF97BC16DCBD5300898F01 /* Build configuration list for PBXProject "DSPOpenCLGPUTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEF97C816DCBD5300898F01 /* Debug */,
+				AEEF97C916DCBD5300898F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEEF97CA16DCBD5300898F01 /* Build configuration list for PBXNativeTarget "DSPOpenCLGPUTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEF97CB16DCBD5300898F01 /* Debug */,
+				AEEF97CC16DCBD5300898F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEEF97B916DCBD5300898F01 /* Project object */;
+}

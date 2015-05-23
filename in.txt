@@ -1,0 +1,13 @@
+RESULTS_PATH                "WynikiProjektu/"
+AUDIO_IN_FILE_PATH          "testFile_stereo.wav"
+IMPULSE_RESPONSE_PATH       "reverb_samples/HyperVerb-StateCapitol.wav"
+
+//carrying experiments 
+//can take many hours
+IF_CARRY_EXPERIMENTS        "NO"    //YES or NO
+
+//use only if 
+//not want to 
+//carry experiments
+HARDWARE                    "GPU"    //GPU or CPU
+BLOCK_SIZE                  "1024"   //power of 2
